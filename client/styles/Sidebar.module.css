@@ -1,0 +1,17 @@
+.sidebar {
+     height: calc(100vh - 40px);
+     width: 100px;
+     border-top-left-radius: 30px;
+     border-bottom-left-radius: 30px;
+}
+
+.iconList li {
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+}
+  
+  

@@ -1,0 +1,38 @@
+.avatar img{
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 14px;
+    margin-right: 100px;
+}
+
+.message {
+    font-size: 14px;
+}
+
+.time {
+    font-size: 10px;
+}
+
+.middle {
+    background-color: rgb(190, 230, 190);
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.chat  {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: flex-end;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}

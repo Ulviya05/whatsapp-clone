@@ -1,0 +1,157 @@
+.avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 5px; 
+}
+
+.topLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 50px; */
+    /* margin-bottom: 2px; */
+    /* margin: 50px 0px 0px 0px; */
+}
+
+
+.members,
+.number {
+    font-size: 13px;
+    font-weight: 400;
+    color: grey;
+}
+
+.number {
+    margin-right: 5px;
+    /* margin-left: 5px; */
+}
+
+.profileContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    /* height: calc(100% - 85px); */
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+.call {
+    display: flex;
+    justify-content: center;
+}
+
+.rightBottom {
+    display: flex;
+    align-items: center;
+    margin-top: -5px; 
+}
+
+.dots {
+    margin-right: -60px;
+    color: grey;
+    margin-left: 30px;
+    padding-right: 10px;
+}
+
+.micIcon,
+.videoIcon {
+    margin-right: 7px;
+}
+
+.mic {
+    margin-right: 7px;
+    margin-left: 5px;
+}
+
+.video {
+    margin-right: -7px;
+}
+
+.mic,
+.video {
+    display: flex;
+    /* margin-right: 10px; */
+    background-color: rgb(248, 246, 246);
+    border-radius: 5px;
+    padding: 4px 10px 4px 7px;
+    margin-top: 10px;
+}
+
+.micChat,
+.videoChat {
+    font-size: 13px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    font-weight: 400;
+}
+
+.additional {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0px 10px 0px 15px;
+}
+
+.add_left {
+    font-size: 13px;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+.search,
+.color,
+.emoji,
+.links {
+    color: grey;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;  
+}
+
+.photo_label {
+    display: flex;
+    /* padding-left: 20px; */
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.shared {
+    padding: 5px 0px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 0px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 820px) {
+    .photo {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+

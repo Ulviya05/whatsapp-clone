@@ -1,0 +1,29 @@
+.all_chats {
+    margin: 20px;
+    /* width: 280px; */
+    width:35%;
+}
+
+.heading {
+    font-size:12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.msg_heading {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.unread {
+    color: rgb(144, 197, 144);
+    font-size: 25px;
+    margin-left: 15px;   
+}
+
+.pinned ,
+.all {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px 0px 15px 0px;
+}

@@ -1,0 +1,34 @@
+.chat {
+    display:flex;
+    margin-bottom: 5px;
+}
+
+.avatar img{
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 14px;
+}
+
+.lastMessage {
+    font-size: 14px;
+}
+
+.time {
+    font-size: 10px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 100%;
+}

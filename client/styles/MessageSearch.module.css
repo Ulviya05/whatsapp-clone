@@ -1,0 +1,11 @@
+.search {
+    box-shadow: inset 0 0 0 2px white;
+    background-color:rgb(243, 243, 243);
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+.search_input {
+    outline: none;
+}
