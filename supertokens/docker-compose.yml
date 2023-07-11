@@ -2,30 +2,30 @@ version: '3'
 
 services:
   db:
-    image: mysql:latest
+    image: 'postgres:latest'
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: supertokens_user
-      MYSQL_PASSWORD: somePassword
-      MYSQL_DATABASE: supertokens
+      POSTGRES_USER: supertokens_user 
+      POSTGRES_PASSWORD: somePassword 
+      POSTGRES_DB: supertokens
     ports:
-      - 3306:3306
+      - 5432:5432
     networks:
       - app_network
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
-      timeout: 20s
-      retries: 10
+      test: ['CMD', 'pg_isready']
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   supertokens:
-    image: registry.supertokens.io/supertokens/supertokens-mysql
+    image: registry.supertokens.io/supertokens/supertokens-postgresql
     depends_on:
       - db
     ports:
       - 3567:3567
     environment:
-      MYSQL_CONNECTION_URI: mysql://supertokens_user:somePassword@db:3306/supertokens
+      POSTGRESQL_CONNECTION_URI: "postgresql://supertokens_user:somePassword@db:5432/supertokens"
     networks:
       - app_network
     restart: unless-stopped
