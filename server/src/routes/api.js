@@ -2,9 +2,9 @@ const express = require("express");
 
 const api = express.Router();
 
-const userProfileRouter = require("./userProfile/userProfile.route");
+const profileRouter = require("./profile/profile.route");
 
-api.use("/userProfile", userProfileRouter);
+api.use("/profile", profileRouter);
 
 module.exports = {
   api,
