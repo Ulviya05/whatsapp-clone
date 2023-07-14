@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styles from '../styles/UserProfile.module.css';
 
 function UserProfile() {
-  const [name, setName] = useState('ulviya');
-  const [about, setAbout] = useState('haha');
+  const [name, setName] = useState(JSON.parse(localStorage.getItem("profile")).name);
+  const [about, setAbout] = useState(JSON.parse(localStorage.getItem("profile")).about);
   const [isEditingName, setIsEditingName] = useState(false);
   const [isEditingAbout, setIsEditingAbout] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
