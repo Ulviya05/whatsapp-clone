@@ -1,0 +1,116 @@
+.userProfile {
+    margin: 20px;
+    /* width: 280px; */
+    width:35%;
+}
+
+.avatar img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nameSection,
+.aboutSection {
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.nameSection {
+    margin: 30px 0px;
+}
+
+.sectionName {
+    /* color: #008069; */
+    color: rgb(155, 231, 155);
+    font-size: 14px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pen_icon,
+.check_icon {
+    color: rgb(168, 165, 165);
+    cursor: pointer;
+}
+
+.pen_icon {
+    font-size: 15px;
+}
+
+.check_icon {
+    font-size: 20px;
+}
+
+.nameInput,
+.aboutInput {
+    border: none;
+    border-bottom: 2px solid rgb(155, 231, 155);
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.avatar input[type='file'] {
+    display: none;
+}
+
+.avatar input[type='file'] + label {
+    display: none;
+}
+
+  
+  
+  .avatar:hover img {
+    filter: grayscale(70%);
+  }
+  
+  .avatar:hover .cameraIcon,
+  .avatar:hover .uploadText,
+  .avatar:hover .uploadText2 {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .cameraIcon,
+  .uploadText,
+  .uploadText2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .cameraIcon {
+    font-size: 22px;
+    transform: translate(-50%, -50%);
+  }
+
+  .uploadText {
+    font-size: 12px;
+    padding-top: 10px;
+    transform: translateX(-50%);
+  }
+  
+  .uploadText2{
+    font-size: 12px;
+    padding-top: 25px;
+    transform: translateX(-50%);
+  }
+  
+  
+  

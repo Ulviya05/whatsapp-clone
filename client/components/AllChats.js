@@ -56,7 +56,7 @@ function AllChats() {
         <div className="search-bar">
           <MessageSearch />
         </div>
-        <div className="section-messages" style={{ height: `calc(100vh - 160px)`, overflowY: "auto", paddingRight: "10px" }}>
+        <div className="section-messages" style={{ height: `calc(100vh - 160px)`, overflowY: "auto", paddingRight: "5px" }}>
         <div className={styles.pinned}>PINNED</div>
         <div className="chat-list">
           {pinned.map((person, index) => (

@@ -23,6 +23,7 @@
     border-top-left-radius: 0px;
     margin-left: 10px;
     padding: 5px 10px 5px 10px;
+    box-shadow: rgba(0,0,0,10%) -2.5px 2.5px 2.5px
 }
 
 .chat  {

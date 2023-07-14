@@ -68,8 +68,8 @@ function Chat({ avatar, name, number }) {
           </div>
         </div>
       </div>
-      <div className={styles.section}>
-        <div className={styles.chatSection} style={{ overflowY: 'auto', paddingRight: '10px' }}>
+      <div className={styles.section} style={{ overflowY: 'auto', paddingRight: '5px' }}>
+        <div className={styles.chatSection} style={{ overflowY: 'auto', paddingRight: '5px' }}>
           {allMessages.map((person, index) => (
             <Message
               key={index}

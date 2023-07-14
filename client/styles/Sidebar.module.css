@@ -12,6 +12,20 @@
 .icon {
     font-size: 24px;
     color: white;
+    cursor: pointer;
+    transition: all .3s;
 }
+
+.icon:hover {
+    color: rgb(190, 230, 190);
+}
+
+
+.icon.active {
+    color: rgb(190, 230, 190);
+}
+  
+
+
   
   
