@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SessionReact from "supertokens-auth-react/recipe/session";
 import styles from '../styles/MyHome.module.css';
 import Sidebar from '../components/Sidebar';
@@ -7,6 +7,7 @@ import Chat from '../components/Chat';
 import Settings from '../components/Settings';
 import UserProfile from '../components/UserProfile';
 // import Profile from '../components/Profile';
+import axios from 'axios';
 
 function Home() {
   const [showSettings, setShowSettings] = React.useState(false);

@@ -1,14 +1,14 @@
 import "../styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import React from "react";
 import { useEffect } from "react";
-import SuperTokensReact, { SuperTokensWrapper } from "supertokens-auth-react";
+import SuperTokens, { SuperTokensWrapper } from "supertokens-auth-react";
 import * as SuperTokensConfig from "../config/frontendConfig";
 import Session from "supertokens-auth-react/recipe/session";
 
 if (typeof window !== "undefined") {
-    SuperTokensReact.init(SuperTokensConfig.frontendConfig());
+    console.log("init")
+    SuperTokens.init(SuperTokensConfig.frontendConfig());
 }
 
 function MyApp({ Component, pageProps }) {
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
                     location.reload();
                 } else {
                     // user has been logged out
-                    SuperTokensReact.redirectToAuth();
+                    SuperTokens.redirectToAuth();
                 }
             }
         }
