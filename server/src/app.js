@@ -1,4 +1,6 @@
 const express = require("express");
+const fileUpload = require('express-fileupload');
+const path = require('path');
 const cors = require("cors");
 const morganBody = require('morgan-body');
 const supertokens = require("supertokens-node");
@@ -7,6 +9,14 @@ const { middleware, errorHandler } = require("supertokens-node/framework/express
 const { api } = require("./routes/api");
 
 const app = express();
+
+app.use(express.json({limit: '50mb'}));
+// enable files upload
+app.use(fileUpload({
+    limits: { fileSize: 5 * 1024 * 1024 },
+    createParentPath: true
+}));
+app.use('/photo',express.static('uploads'));
 
 
 const domain = process.env.WEBSITE_DOMAIN;

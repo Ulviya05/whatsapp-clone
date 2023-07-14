@@ -83,8 +83,6 @@ function Chat({ avatar, name, number }) {
           {allMyMessages.map((person, index) => (
             <MyMessage
               key={index}
-              avatar={person.avatar}
-              name={person.name}
               message={person.message}
               time={person.time}
             />
