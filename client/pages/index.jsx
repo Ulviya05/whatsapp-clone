@@ -7,7 +7,8 @@ import Chat from '../components/Chat';
 import Settings from '../components/Settings';
 import UserProfile from '../components/UserProfile';
 // import Profile from '../components/Profile';
-import axios from 'axios';
+import { io } from "socket.io-client";
+import Session from "supertokens-web-js/recipe/session"
 
 function Home() {
   const [showSettings, setShowSettings] = React.useState(false);
@@ -35,6 +36,23 @@ function Home() {
       number: 9
     },
   ];
+
+  useEffect(() => {
+    async function initSocketConnection() {
+      const token = await Session.getAccessToken();
+      if (token === undefined) {
+          alert("User is not logged in");
+          return null;
+      }
+      const socket = io.connect('http://localhost:5555', {
+          query: { token }
+      });
+      return socket;
+    }
+
+    const socket = initSocketConnection();
+  }, [])
+  
 
   return (
     <SessionReact.SessionAuth>

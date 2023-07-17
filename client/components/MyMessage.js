@@ -3,7 +3,7 @@ import styles from '../styles/MyMessage.module.css';
 
 function MyMessage({ message, time}) {
   // const [name] = useState(JSON.parse(localStorage.getItem("profile")).name);
-  const [photo] = useState(JSON.parse(localStorage.getItem("profile")).photo);
+  const [photo] = useState(JSON.parse(localStorage.getItem("profile"))?.photo);
   return (
     <div className={styles.chat}>
       <div className={styles.middle}>
