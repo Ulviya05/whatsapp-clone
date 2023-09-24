@@ -2,10 +2,10 @@
 
 # Real-time WhatsApp Clone
 
-## Overview
+# Overview
 The Real-time WhatsApp Clone is a full-stack web application that emulates the popular WhatsApp messaging platform. This project provides a seamless and secure messaging experience with real-time communication capabilities. Built using Node.js (Express.js), PostgreSQL, Docker, Supertokens, and React, it offers a robust and feature-rich alternative for those who want to explore and understand modern web development technologies.
 
-## Key Features
+# Key Features
 **User Authentication**: Secure user sign-up and login using Supertokens with advanced password encryption.
 
 **Real-time Messaging**: Enjoy instant messaging with real-time updates powered by web sockets.
